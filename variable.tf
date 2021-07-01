@@ -1,6 +1,13 @@
-variable "ami_id" {
-    type = string
-    default = "ami-0801628222e2e96d6"
+variable "DxzSky_region" {
+    type = list
+}
+
+variable "DxzSky_engineerprofile" {
+    /* type = string */
+}
+
+variable "DxzSky_CIDR" {
+    type = list
 }
 
 variable "instance_type" {
