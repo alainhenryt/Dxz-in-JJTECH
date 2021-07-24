@@ -3,25 +3,51 @@ variable "DxzSky_region" {
 }
 
 variable "DxzSky_engineerprofile" {
-    /* type = string */
+
+}
+variable "DxzSky_Keypair" {
+    type = string
 }
 
-variable "DxzSky_CIDR" {
+variable "DxzSky_NetWrkTags" {
     type = list
 }
 
-variable "instance_type" {
-    type = string
-    default = "t2.micro"
+variable "DxzSky_CIDRs" {
+    type = list
 }
 
-variable "Dxz_envi" {
+variable "DxzSky_InternetCIDR" {
     type = string
-    default = "DxzSky_TestingEnv-Ubuntu"
-
 }
 
-variable "DxzSky_VPC-Env" {
-    type = string
-    default = "DxzSky_VPC-TestingEnv"
+variable "DxzSky_AZs" {
+    type = list
+}
+
+variable "DxzSky_ComputeTags" {
+    type = list
+}
+
+variable "Dxzsky_ami_id" {
+    type = map
+    default = {
+        Ubt =  "ami-0801628222e2e96d6",
+        Lnx =  "ami-07d95746fec4b20a3"
+    }
+}
+
+variable "Dxzsky_instance_type" {
+    type = list
+}
+
+variable "Dxzsky_Sg_Ports" {
+    type = map
+    default = {
+        https =  "443",
+        ssh   =  "22",
+        http  =  "80",
+        egr1  =  "0",
+        egr2  =  "-1"
+    }
 }

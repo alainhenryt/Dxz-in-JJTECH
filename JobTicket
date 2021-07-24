@@ -1,0 +1,16 @@
+Hello A.H,
+
+Welcome on board. Here is you first task. 
+One of ou trusted client call DexzonSky Inc. is need of AWS low level infra design. See details of the designbelow
+ #1 : One VPC
+ #2 : 1 pub and priv.Subnt
+ #3 : Allowed Sg ports 22,80,443
+ #4 : Network interface with an ip in the Pub.Subnt
+ #5 : Assign an EIP to the Network interface
+ #6 : Install/enable apache2 in Ubuntu server in Pub.Subnt
+ #7 : 2 postgresDb in Priv.Subnt using Amazon Linux2 AMI.
+ #8 : A Nat gateWay for Priv.Subnt
+
+Best Regards,
+Jean Dt
+(COM).
